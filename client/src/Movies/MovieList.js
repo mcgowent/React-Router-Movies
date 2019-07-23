@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import MovieCard from "./MovieCard"
 
-
 const MovieList = props => {
   const [movies, setMovies] = useState([])
   useEffect(() => {
@@ -34,7 +33,7 @@ const MovieList = props => {
 function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
   return (
-    <Link to={`/movies/${movie.id}`}>
+    <Link className="style" to={`/movies/${movie.id}`}>
       <MovieCard title={title} director={director} metascore={metascore} stars={stars} />
     </Link>
   );
