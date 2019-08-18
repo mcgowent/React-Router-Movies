@@ -4,21 +4,33 @@ body {
   font-family: sans-serif;
   background-color: #f2f2f2;
 }
-
+.movie-list {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .movie-card {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
   cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
+  margin: 1rem;
+  width:500px;
 }
 
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
+}
+
+.style {
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  display:flex;
+
+  
 }
 
 .saved-list {
